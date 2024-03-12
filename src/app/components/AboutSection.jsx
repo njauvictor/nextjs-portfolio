@@ -4,20 +4,32 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
-    ),
-  },
+    {
+      title: "Skills",
+      id: "skills",
+      content: (
+        <div className="flex flex-col md:flex-row justify-between">
+          <ul className="text-1xl text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MONGODB</li>
+            <li>FIREBASE</li>
+            <li>JavaScript</li> 
+            <li>React</li>
+            <li>NEXT.JS</li>
+          </ul>
+          <ul className="text-1xl text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 md:-ml-32">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>TAILWIND CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>WebFlow</li>
+            <li>Shopify</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
+      ),
+    },
   {
     title: "Education",
     id: "education",

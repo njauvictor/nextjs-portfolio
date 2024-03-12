@@ -22,7 +22,7 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Victor Maina",
                 1000,
                 "Web Developer",
                 1000,
@@ -37,10 +37,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          I'm a web developer and a tech enthusiast. I design and build fast, powerful and SEO-friendly websites and mobile apps for SME'S.
           </p>
-          <div>
+          <div>   
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
@@ -68,8 +67,8 @@ const HeroSection = () => {
               src="/images/hero-image.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={600}
+              height={600}
             />
           </div>
         </motion.div>

@@ -18,6 +18,7 @@ const navLinks = [
     title: "Contact",
     path: "#contact",
   },
+  
 ];
 
 const Navbar = () => {
@@ -25,12 +26,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-12 py-4">
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600"> Victor Maina</span>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -43,11 +44,15 @@ const Navbar = () => {
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
+                className="items-center px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+          >
               <XMarkIcon className="h-5 w-5" />
             </button>
-          )}
+          )
+          
+          }
+
+           
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">

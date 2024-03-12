@@ -15,10 +15,10 @@ module.exports = {
       },
     },
     colors: {
-      ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
+      ...colors,  
+      primary: colors.green,
+      secondary: colors.orange, 
     },
   },
-  plugins: [],
+  plugins: [],  
 };
